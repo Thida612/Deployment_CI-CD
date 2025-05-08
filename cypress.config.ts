@@ -13,14 +13,8 @@ export default defineConfig({
 
   e2e: {
     baseUrl: 'http://localhost:3001',
-    setupNodeEvents(on) {
-      // Example usage of 'on' to avoid the error
-      on('task', {
-        log(message) {
-          console.log(message);
-          return null;
-        },
-      });
+    setupNodeEvents(on, config) {
+      // implement node event listeners here
     },
   },
 });
